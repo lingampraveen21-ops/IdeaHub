@@ -1,0 +1,100 @@
+ .dashboard-container {
+  display: flex;
+  width: 100%;
+  min-height: 90vh;
+}
+
+/* LEFT SIDEBAR */ 
+.sidebar {
+  width: 20%;
+  background-color: #dbeafe;
+  padding: 20px;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.sidebar-list li {
+  list-style: none;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* FEED SECTION */
+.feed {
+  width: 60%;
+  padding: 20px;
+}
+
+.feed-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* IDEA CARD */
+.idea-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.idea-user {
+  font-weight: bold;
+}
+
+.idea-title {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.idea-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+} 
+
+.idea-tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: #bfdbfe;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+
+/* BUTTONS */
+.idea-actions button {
+  margin-right: 10px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.like-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+.comment-btn {
+  background-color: gray;
+  color: white;
+}
+.edit-btn {
+  background-color: #facc15;
+}
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* RIGHT SIDEBAR */
+.trending {
+  width: 20%;
+  padding: 20px;
+  background-color: #f3f4f6;
+} 
