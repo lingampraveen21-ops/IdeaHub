@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", 
+  baseURL: "https://ideahub-e9pf.onrender.com/api", 
 });
 
 // Token ko header me add karne ka setup
