@@ -12,7 +12,10 @@ dotenv.config();
 const app = express();
 
 // MIDDLEWARES
-app.use(cors());
+app.use(cors({
+  origin: "https://your-vercel-frontend-url.vercel.app", // Replace with your actual Vercel URL
+  credentials: true,
+}));
 app.use(express.json());
 
 // CONNECT DATABASE FIRST
