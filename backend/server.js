@@ -13,19 +13,15 @@ const app = express();
 
 // MIDDLEWARES
 app.use(cors({
-  origin: "https://your-vercel-frontend-url.vercel.app", // Replace with your actual Vercel URL
+  origin: ["https://idea-hub-seven.vercel.app/"], // replace with actual domain
   credentials: true,
 }));
 app.use(express.json());
 
-// CONNECT DATABASE FIRST
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+// CONNECT DATABASE (Mongoose 7+ — no deprecated options)
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log("Mongo Error:", err));
+  .catch((err) => console.error("Mongo Error:", err));
 
 // ROUTES
 app.use("/api/auth", authRoutes);
